@@ -1,3 +1,3 @@
 #!/bin/bash
-cd /home/ubuntu/nodeapp
-npm start &
+cd /home/ubuntu/node-todo-cicd
+nohup node app.js
