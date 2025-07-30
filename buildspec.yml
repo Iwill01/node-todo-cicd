@@ -8,7 +8,6 @@ phases:
   build:
     commands:
       - echo "Building the app"
-      - npm run build
 artifacts:
   files:
     - '**/*'
