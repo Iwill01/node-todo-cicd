@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /home/ubuntu/nodeapp
+    destination: /home/ubuntu/node-todo-cicd
 hooks:
   AfterInstall:
     - location: scripts/install_dependencies.sh
