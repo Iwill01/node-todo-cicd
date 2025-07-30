@@ -1,3 +1,3 @@
 #!/bin/bash
-cd /home/ubuntu/nodeapp
+cd /home/ubuntu/node-todo-cicd
 npm install
