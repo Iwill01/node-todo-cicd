@@ -1,9 +1,16 @@
 #!/bin/bash
 
-cd /home/ubuntu/node-todo-cicd
+APP_DIR=/home/ubuntu/node-todo-cicd
 
-# Fix permissions before npm install
-sudo chown -R ubuntu:ubuntu /home/ubuntu/node-todo-cicd
+# Fix permissions
+sudo chown -R ubuntu:ubuntu $APP_DIR
+
+# Go to app directory
+cd $APP_DIR
+
+# Optional: Remove problematic lock file
+rm -f package-lock.json
 
 # Install dependencies
-npm install
+npm install --unsafe-perm=true
+
